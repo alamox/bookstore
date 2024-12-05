@@ -29,7 +29,10 @@ export default function Store({children}){
         const index = items.findIndex(i => i.id === item.id);
         const temp = [...items];
 
-        temp[index] = {...item};
+        if (index !== -1) {
+            temp[index] = { ...item }; // Actualiza el libro correspondiente
+            setItems(temp); // Actualiza el estado del store
+        }
     }
 
     function deleteItem(item){

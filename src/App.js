@@ -3,6 +3,7 @@ import Index from './pages';
 import Create from './pages/create';
 import View from './pages/view';
 import Store from './store/store';
+import Update from './pages/update';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path='/' element={<Index />} />
           <Route path='create' element={<Create />} />
           <Route path='view/:bookId' element={<View />} />
+          <Route path='update/:bookId' element={<Update />}/>
         </Routes>
       </BrowserRouter>
     </Store>

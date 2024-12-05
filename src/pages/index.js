@@ -5,6 +5,7 @@ import Book from "../components/book";
 export default function Index(){
 
     const store = useAppContext();
+    
     const booksContainer = {
         display: 'flex',
         flexwrap: 'wrap',
